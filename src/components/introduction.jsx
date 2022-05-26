@@ -29,7 +29,7 @@ export default class Introduction extends Component {
                     <div className="col-md-6 col-md-offset-3 col-md-pull-3 col-sm-12 col-xs-12 js-fullheight slider-text">
                       <div className="slider-text-inner">
                         <div className="desc">
-                          <h1>Text<br /> Text</h1>
+                          <h1>I like to<br /> Build Things...</h1>
                           <p><a className="btn btn-primary btn-learn" href="https://github.com/flamespinner" target="_blank" rel="noopener noreferrer">View Projects <i className="icon-briefcase3" /></a></p>
                         </div>
                       </div>
@@ -44,8 +44,8 @@ export default class Introduction extends Component {
                     <div className="col-md-6 col-md-offset-3 col-md-pull-3 col-sm-12 col-xs-12 js-fullheight slider-text">
                       <div className="slider-text-inner">
                         <div className="desc">
-                          <h1>I often <br/>Write ... </h1>
-                          <p><a className="btn btn-primary btn-learn" href="https://dhruvbarochiya.me/" target="_blank" rel="noopener noreferrer">View Blog <i className="icon-book" /></a></p>
+                          <h1>and something somethings<br /> too</h1>
+                          <p><a className="btn btn-primary btn-learn" href="https://github.com/flamespinner" target="_blank" rel="noopener noreferrer">View Projects <i className="icon-briefcase3" /></a></p>
                         </div>
                       </div>
                     </div>
