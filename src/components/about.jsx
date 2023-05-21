@@ -37,7 +37,7 @@ export default class About extends Component {
                     <i className="icon-bulb" />
                 </span>
                 <div className="desc">
-                    <h3>Web Development </h3>
+                    <h3>Software Development </h3>
                     <p>Some Text Here</p>
                     {/*<p>I have experience building websites and chrome extentions using JavaScript,React,HTML,CSS</p>*/}
                 </div>
@@ -49,7 +49,7 @@ export default class About extends Component {
                     <i className="icon-phone3" />
                 </span>
                 <div className="desc">
-                    <h3>Title Here</h3>
+                    <h3>Device Repair</h3>
                     <p>Some Text Here</p>
                 </div>
                 </div>
@@ -60,7 +60,7 @@ export default class About extends Component {
                     <i className="icon-data" />
                 </span>
                 <div className="desc">
-                    <h3>Title Here</h3>
+                    <h3>I.T. Support</h3>
                     <p>Some Text Here</p>
                 </div>
                 </div>
