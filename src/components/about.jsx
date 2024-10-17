@@ -60,7 +60,7 @@ export default class About extends Component {
                             <i className="icon-data" />
                         </span>
                         <div className="desc">
-                            <h3>I.T. Support</h3>
+                            <h3>System Administration</h3>
                             {/* <p>Some Text Here</p> */}
                         </div>
                     </div>
