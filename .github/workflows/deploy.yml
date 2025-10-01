@@ -3,29 +3,43 @@ name: Deploy React App to GitHub Pages
 on:
   push:
     branches:
-      - main  # Deploy on pushes to main branch
+      - main  # Trigger deploy on pushes to main branch
 
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
 
     steps:
+      # Step 1: Checkout your repo
       - name: Checkout repo
         uses: actions/checkout@v4
 
+      # Step 2: Set up Node.js
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: '20'  # Or whichever Node version works for your old React app
+          node-version: '20' # Compatible with modern builds; older versions may also work
 
+      # Step 3: Install dependencies
       - name: Install dependencies
         run: npm install
 
+      # Step 4: Build the React app
       - name: Build
         run: npm run build
 
-      - name: Deploy to GitHub Pages
+      # Step 5: Deploy to GitHub Pages
+      - name: Deploy
         uses: peaceiris/actions-gh-pages@v6
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./build
+          # Optional: set a custom commit message
+          commit_message: "Deploy React app to GitHub Pages"
+
+      # Step 6: Optional SPA fallback for React Router
+      # If using BrowserRouter, add a 404.html to redirect to index.html
+      - name: Add SPA fallback
+        if: always() 
+        run: |
+          cp build/index.html build/404.html
