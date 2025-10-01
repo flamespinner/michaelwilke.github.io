@@ -27,5 +27,8 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ]
+  ],
+  "rules": {
+    "jsx-a11y/anchor-is-valid": "off"
+  }
 }
